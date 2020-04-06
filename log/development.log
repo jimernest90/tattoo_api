@@ -14559,3 +14559,35 @@ Processing by ArtistsController#index as HTML
 Completed 200 OK in 190ms (Views: 0.1ms | ActiveRecord: 74.0ms | Allocations: 37988)
 
 
+Started GET "/artists" for ::1 at 2020-04-06 17:07:11 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtistsController#index as HTML
+  [1m[36mArtist Load (24.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY ratingstwo LIMIT $1[0m  [["LIMIT", 12]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (1.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (53.0ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 7]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 2]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (4.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 12]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 10]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 4]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (4.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 14]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 5]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 3]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 8]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 9]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."artist_id" = $1[0m  [["artist_id", 11]]
+  ↳ app/controllers/artists_controller.rb:15:in `index'
+Completed 200 OK in 391ms (Views: 0.2ms | ActiveRecord: 111.9ms | Allocations: 37985)
+
+
