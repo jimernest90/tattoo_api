@@ -1,9 +1,9 @@
-# Rails.application.config.middleware.insert_before 0, Rack::Cors do
-#   allow do
-#     origins 'https://konetink.netlify.com/'
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins 'https://konetink.netlify.com/'
 
-#     resource '*',
-#       headers: :any,
-#       methods: [:get, :post, :put, :patch, :delete, :options, :head]
-#   end
-# end
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end
