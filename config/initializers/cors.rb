@@ -2,10 +2,7 @@ config.api_only = true
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://konetink.netlify.com/'
-
-    resource '*',
-      headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+    origins '*'
+    resource '*', :headers => :any, :methods => [:get, :post, :patch, :options]
   end
 end
